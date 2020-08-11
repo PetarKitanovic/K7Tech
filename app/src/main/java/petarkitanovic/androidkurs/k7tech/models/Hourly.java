@@ -15,7 +15,7 @@ public class Hourly {
     private Double temp;
     @SerializedName("feels_like")
     @Expose
-    private Integer feelsLike;
+    private Double feelsLike;
     @SerializedName("pressure")
     @Expose
     private Integer pressure;
@@ -42,7 +42,7 @@ public class Hourly {
     private List<Weather_> weather = null;
     @SerializedName("pop")
     @Expose
-    private Integer pop;
+    private Double pop;
 
     public Integer getDt() {
         return dt;
@@ -60,11 +60,11 @@ public class Hourly {
         this.temp = temp;
     }
 
-    public Integer getFeelsLike() {
+    public Double getFeelsLike() {
         return feelsLike;
     }
 
-    public void setFeelsLike(Integer feelsLike) {
+    public void setFeelsLike(Double feelsLike) {
         this.feelsLike = feelsLike;
     }
 
@@ -132,11 +132,11 @@ public class Hourly {
         this.weather = weather;
     }
 
-    public Integer getPop() {
+    public Double getPop() {
         return pop;
     }
 
-    public void setPop(Integer pop) {
+    public void setPop(Double pop) {
         this.pop = pop;
     }
 

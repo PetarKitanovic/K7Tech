@@ -42,7 +42,7 @@ public class Current {
     private Integer visibility;
     @SerializedName("wind_speed")
     @Expose
-    private Integer windSpeed;
+    private Double windSpeed;
     @SerializedName("wind_deg")
     @Expose
     private Integer windDeg;
@@ -138,11 +138,11 @@ public class Current {
         this.visibility = visibility;
     }
 
-    public Integer getWindSpeed() {
+    public Double getWindSpeed() {
         return windSpeed;
     }
 
-    public void setWindSpeed(Integer windSpeed) {
+    public void setWindSpeed(Double windSpeed) {
         this.windSpeed = windSpeed;
     }
 
